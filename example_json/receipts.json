@@ -1,0 +1,52 @@
+{
+  "receipts": [
+    {
+      "id": 1,
+      "purchase_date": "Thu Jan 03 15:10:06 GMT+01:00 2019",
+      "amount": 38.99,
+      "payment_method": "credit card",
+      "name": "Simple example of receipt",
+      "commentary": "A little commentary about it",
+      "pinned": false,
+      "user_id": 1,
+      "shop_id": 3,
+      "category_id": 5
+    },
+    {
+      "id": 2,
+      "purchase_date": "Thu Jan 24 15:10:06 GMT+01:00 2019",
+      "amount": 400,
+      "payment_method": "credit card",
+      "name": "Another simple example of receipt",
+      "commentary": "A little commentary about it",
+      "pinned": true,
+      "user_id": 1,
+      "shop_id": 2,
+      "category_id": 8
+    },
+    {
+      "id": 3,
+      "purchase_date": "Thu Jan 19 15:10:06 GMT+01:00 2019",
+      "amount": 21.67,
+      "payment_method": "credit card",
+      "name": "Example Receipt Three",
+      "commentary": "A little commentary about it",
+      "pinned": false,
+      "user_id": 1,
+      "shop_id": 1,
+      "category_id": 2
+    },
+    {
+      "id": 4,
+      "purchase_date": "Thu Jan 07 15:10:06 GMT+01:00 2019",
+      "amount": 4.97,
+      "payment_method": "credit card",
+      "name": "Receipt example Four",
+      "commentary": "A little commentary about it",
+      "pinned": true,
+      "user_id": 1,
+      "shop_id": 2,
+      "category_id": 4
+    }
+  ]
+}
