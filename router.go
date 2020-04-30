@@ -1,7 +1,7 @@
 package main
 
 import (
-	"etee-api/models"
+	"github.com/NaouelZ/etee-api/models"
 
 	"github.com/gorilla/mux"
 )

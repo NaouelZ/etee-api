@@ -3,10 +3,10 @@ package models
 import (
 	"database/sql"
 	"encoding/json"
-	"etee-api/config"
 	"fmt"
 	"net/http"
 
+	"github.com/NaouelZ/etee-api/config"
 	"github.com/gorilla/mux"
 )
 

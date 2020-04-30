@@ -2,10 +2,11 @@ package main
 
 import (
 	"database/sql"
-	"etee-api/config"
-	"etee-api/models"
 	"fmt"
 	"net/http"
+
+	"github.com/NaouelZ/etee-api/config"
+	"github.com/NaouelZ/etee-api/models"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/gorilla/mux"
