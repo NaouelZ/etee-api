@@ -2,10 +2,11 @@ package models
 
 import (
 	"encoding/json"
+	"etee-api/config"
 	"fmt"
 	"net/http"
 
-	"github.com/NaouelZ/etee-api/config"
+	_ "github.com/NaouelZ/etee-api/config"
 
 	"github.com/gorilla/mux"
 )

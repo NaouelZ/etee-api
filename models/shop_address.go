@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/NaouelZ/etee-api/config"
+	"etee-api/config"
+
+	_ "github.com/NaouelZ/etee-api/config"
 
 	"github.com/gorilla/mux"
 )

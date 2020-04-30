@@ -2,14 +2,15 @@ package main
 
 import (
 	"database/sql"
+	"etee-api/config"
+	"etee-api/models"
 	"fmt"
 	"net/http"
 
-	"github.com/NaouelZ/etee-api/config"
-	"github.com/NaouelZ/etee-api/models"
+	_ "github.com/NaouelZ/etee-api/config"
+	"github.com/gorilla/mux"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/gorilla/mux"
 )
 
 var db *sql.DB
@@ -21,6 +22,14 @@ func main() {
 	config.DatabaseInit()
 
 	defer config.Db().Close()
+
+	router := InitializeRouter()
+
+	http.ListenAndServe(":8000", router)
+}
+
+func InitializeRouter() *mux.Router {
+	/* TO DO */
 
 	router := mux.NewRouter()
 
@@ -49,5 +58,5 @@ func main() {
 	router.HandleFunc("/address/{id}", models.GetAddress).Methods("GET")
 	router.HandleFunc("/address/{id}", models.DeleteAddress).Methods("DELETE")
 
-	http.ListenAndServe(":8000", router)
+	return router
 }
