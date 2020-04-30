@@ -46,7 +46,7 @@ func GetAddress(w http.ResponseWriter, r *http.Request) {
 		panic(err.Error())
 	}
 	defer result.Close()
-	var s Shop
+	var s ShopAddress
 	for result.Next() {
 		err := result.Scan(&s.ID, &s.Number, &s.Street, &s.City, &s.Country, &s.ZipCode)
 

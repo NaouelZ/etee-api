@@ -7,6 +7,7 @@ import (
 )
 
 func InitializeRouter() *mux.Router {
+	/* TO DO */
 
 	router := mux.NewRouter()
 
