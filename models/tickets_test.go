@@ -5,8 +5,6 @@ import (
 	"log"
 	"testing"
 
-	"etee-api/config"
-
 	_ "github.com/NaouelZ/etee-api/config"
 )
 
@@ -22,9 +20,6 @@ func TestDatabaseInit(t *testing.T) {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	// Create Table cars if not exists
-	config.CreateCarsTable()
 }
 
 func TestDatabaseDestroy(t *testing.T) {

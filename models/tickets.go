@@ -28,9 +28,6 @@ type Ticket struct {
 var db *sql.DB
 var err error
 
-//TO DO
-// Distinguer les requettes HTTP ( mettre dans controller ) des actions a effectué
-
 func GetTickets(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var tickets []Ticket

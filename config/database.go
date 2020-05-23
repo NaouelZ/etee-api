@@ -17,7 +17,6 @@ func DatabaseInit() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	// add Create tickets ticket if not exists
 }
 
 // Getter for db var
